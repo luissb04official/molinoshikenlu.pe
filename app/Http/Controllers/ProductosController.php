@@ -12,27 +12,23 @@ class ProductosController extends Controller
         $productos = [
             [
                 'titulo' => 'Mezcla Integral Avícola "Aurea"',
-                'descripcion' => 'Fórmula equilibrada pensada para un desarrollo uniforme y plumaje saludable en todas las etapas productivas.',
+                'descripcion' => 'Alimentos balanceados de alta calidad, especialmente formulados para satisfacer las necesidades nutricionales de diversos animales domésticos, de granja y silvestres.',
                 'imagen' => null,
-                'precio' => 'S/ 45.00',
             ],
             [
                 'titulo' => 'Suplemento Mineral Bovino "FortiGan"',
-                'descripcion' => 'Balance mineral diario que favorece la ganancia de peso y la salud ósea del ganado.',
+                'descripcion' => 'Alimentos balanceados de alta calidad, especialmente formulados para satisfacer las necesidades nutricionales de diversos animales domésticos, de granja y silvestres.',
                 'imagen' => null,
-                'precio' => 'S/ 120.00',
             ],
             [
                 'titulo' => 'Concentrado Energético "Rendimax"',
-                'descripcion' => 'Alta densidad energética para mejorar la conversión alimenticia y el rendimiento en sistemas intensivos.',
+                'descripcion' => 'Alimentos balanceados de alta calidad, especialmente formulados para satisfacer las necesidades nutricionales de diversos animales domésticos, de granja y silvestres.',
                 'imagen' => null,
-                'precio' => 'S/ 75.00',
             ],
             [
                 'titulo' => 'Aditivo Natural "VerdePlus"',
-                'descripcion' => 'Mezcla de extractos botánicos que favorecen la digestión y el bienestar general del animal.',
+                'descripcion' => 'Alimentos balanceados de alta calidad, especialmente formulados para satisfacer las necesidades nutricionales de diversos animales domésticos, de granja y silvestres.',
                 'imagen' => null,
-                'precio' => 'S/ 55.00',
             ],
         ];
 

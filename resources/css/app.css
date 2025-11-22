@@ -15,7 +15,7 @@ body{
 
 .navbar-brand strong{ color: var(--brown-dark); }
 
-/* Centramos el contenido principal y damos un max-width en pantallas grandes */
+
 main.container{ max-width: 1100px; }
 
 footer.site-footer{ border-top: 1px solid rgba(0,0,0,.05); }
