@@ -11,130 +11,56 @@ class ProductosController extends Controller
     {
         $productos = [
             [
-                'titulo' => 'Alimento Integral para Pollos "Avícola Premium"',
-                'descripcion' => 'Fórmula especializada para pollos de engorde y ponedoras, enriquecida con vitaminas A, D, E y complejo B. Contiene aminoácidos esenciales, calcio y fósforo para un desarrollo óptimo. Ideal para maximizar la conversión alimenticia y garantizar huevos de alta calidad.',
+                'titulo' => 'Mezcla Integral Avícola "Aurea"',
+                'descripcion' => 'Fórmula especializada para aves de corral con vitaminas A, D, E y complejo B. Optimiza el crecimiento, mejora la conversión alimenticia y fortalece el sistema inmunológico. Ideal para pollos, patos y aves reproductoras.',
                 'imagen' => null,
                 'categoria' => 'Aves',
-                'beneficios' => [
-                    'Mejora la conversión alimenticia',
-                    'Incrementa la producción de huevos',
-                    'Fortalece el sistema inmunológico',
-                    'Desarrollo muscular saludable'
-                ],
-                'presentaciones' => ['Sacos de 25kg', 'Sacos de 40kg'],
-                'edad_recomendada' => 'Todas las edades'
+                'beneficios' => ['Crecimiento acelerado', 'Mejor conversión', 'Sistema inmune fuerte'],
+                'presentacion' => 'Sacos de 25kg y 40kg'
             ],
             [
-                'titulo' => 'Alimento Balanceado para Patos "AquaPlus"',
-                'descripcion' => 'Nutrición completa para patos de cría y engorde. Fórmula rica en proteínas (18-20%) con suplementos minerales específicos. Incluye prebióticos naturales para una digestión saludable y plumaje brillante.',
-                'imagen' => null,
-                'categoria' => 'Aves Acuáticas',
-                'beneficios' => [
-                    'Plumaje resistente al agua',
-                    'Crecimiento uniforme',
-                    'Mejor digestibilidad',
-                    'Resistencia a enfermedades'
-                ],
-                'presentaciones' => ['Sacos de 25kg', 'Sacos de 40kg'],
-                'edad_recomendada' => 'A partir de 3 semanas'
-            ],
-            [
-                'titulo' => 'Concentrado Bovino "GanaMax"',
-                'descripcion' => 'Suplemento nutricional para ganado vacuno de carne y leche. Rico en energía metabolizable, proteína bypass y minerales quelados. Optimiza la producción láctea y el desarrollo muscular en bovinos de todas las edades.',
+                'titulo' => 'Suplemento Mineral Bovino "FortiGan"',
+                'descripcion' => 'Concentrado mineral rico en calcio, fósforo y microelementos esenciales para ganado vacuno. Mejora la producción láctea, fortalece huesos y optimiza la reproducción en bovinos de carne y leche.',
                 'imagen' => null,
                 'categoria' => 'Bovinos',
-                'beneficios' => [
-                    'Aumenta producción de leche',
-                    'Mejora calidad de la carne',
-                    'Incrementa fertilidad',
-                    'Optimiza digestión ruminal'
-                ],
-                'presentaciones' => ['Sacos de 40kg', 'Sacos de 50kg'],
-                'edad_recomendada' => 'Vacunos adultos'
+                'beneficios' => ['Mayor producción láctea', 'Huesos más fuertes', 'Mejor fertilidad'],
+                'presentacion' => 'Sacos de 40kg y 50kg'
             ],
             [
-                'titulo' => 'Alimento para Cerdos "PorciMax"',
-                'descripcion' => 'Fórmula balanceada para cerdos en crecimiento y acabado. Contiene lisina, metionina y treonina para un desarrollo muscular óptimo. Incluye probióticos para mejorar la salud intestinal y reducir el olor de excretas.',
+                'titulo' => 'Concentrado Energético "Rendimax"',
+                'descripcion' => 'Alimento altamente energético con carbohidratos complejos y grasas de calidad. Diseñado para animales en crecimiento y alta producción. Aumenta el rendimiento y mejora la eficiencia alimentaria.',
                 'imagen' => null,
-                'categoria' => 'Porcinos',
-                'beneficios' => [
-                    'Crecimiento acelerado',
-                    'Mejor conversión alimenticia',
-                    'Carne magra de calidad',
-                    'Salud intestinal óptima'
-                ],
-                'presentaciones' => ['Sacos de 25kg', 'Sacos de 40kg'],
-                'edad_recomendada' => 'Desde destete hasta sacrificio'
+                'categoria' => 'Energético',
+                'beneficios' => ['Alta energía', 'Mejor rendimiento', 'Eficiencia alimentaria'],
+                'presentacion' => 'Sacos de 25kg y 40kg'
             ],
             [
-                'titulo' => 'Concentrado para Cuyes "CuyPlus Premium"',
-                'descripcion' => 'Alimento especializado para cuyes reproductores y de engorde. Alto contenido en vitamina C, fibra digestible y proteína de alta calidad. Fórmula que promueve la reproducción y el crecimiento saludable.',
-                'imagen' => null,
-                'categoria' => 'Especies Menores',
-                'beneficios' => [
-                    'Rica en vitamina C natural',
-                    'Prolificidad reproductiva',
-                    'Crecimiento rápido',
-                    'Pelaje brillante y suave'
-                ],
-                'presentaciones' => ['Sacos de 15kg', 'Sacos de 25kg'],
-                'edad_recomendada' => 'Todas las etapas'
-            ],
-            [
-                'titulo' => 'Alimento para Gallos de Pelea "Gladiador"',
-                'descripcion' => 'Fórmula especial para gallos de combate y reproducción. Alta concentración de proteínas (20-22%), aminoácidos ramificados y antioxidantes naturales. Desarrolla masa muscular, resistencia y plumaje brillante.',
-                'imagen' => null,
-                'categoria' => 'Aves Especializadas',
-                'beneficios' => [
-                    'Desarrollo muscular superior',
-                    'Mayor resistencia física',
-                    'Plumaje vistoso',
-                    'Mejor fertilidad'
-                ],
-                'presentaciones' => ['Sacos de 15kg', 'Sacos de 25kg'],
-                'edad_recomendada' => 'Gallos adultos'
-            ],
-            [
-                'titulo' => 'Suplemento Mineral "MultiMin"',
-                'descripcion' => 'Premezcla vitamínica y mineral para todas las especies. Contiene macro y micro minerales esenciales, vitaminas liposolubles e hidrosolubles. Previene deficiencias nutricionales y mejora el rendimiento productivo.',
+                'titulo' => 'Aditivo Natural "VerdePlus"',
+                'descripcion' => 'Suplemento 100% natural con extractos herbales, probióticos y prebióticos. Mejora la digestión, fortalece la flora intestinal y aumenta la absorción de nutrientes en todas las especies.',
                 'imagen' => null,
                 'categoria' => 'Suplementos',
-                'beneficios' => [
-                    'Previene deficiencias',
-                    'Fortalece huesos',
-                    'Mejora sistema inmune',
-                    'Optimiza metabolismo'
-                ],
-                'presentaciones' => ['Bolsas de 1kg', 'Bolsas de 5kg'],
-                'edad_recomendada' => 'Universal'
+                'beneficios' => ['Digestión mejorada', 'Flora intestinal saludable', 'Mayor absorción'],
+                'presentacion' => 'Bolsas de 1kg y 5kg'
             ],
             [
-                'titulo' => 'Alimento para Reproductoras "Ferti-Ovo"',
-                'descripcion' => 'Nutrición especializada para aves reproductoras. Balanceado con ácidos grasos omega-3, ácido fólico y minerales orgánicos. Optimiza la fertilidad, calidad del huevo fértil y desarrollo embrionario.',
+                'titulo' => 'Alimento para Cuyes "CuyPlus"',
+                'descripcion' => 'Fórmula especial rica en vitamina C y fibra digestible para cuyes reproductores y de engorde. Promueve el crecimiento rápido, pelaje brillante y alta prolificidad reproductiva.',
                 'imagen' => null,
-                'categoria' => 'Reproducción',
-                'beneficios' => [
-                    'Mayor fertilidad',
-                    'Huevos fértiles de calidad',
-                    'Mejor eclosión',
-                    'Crías más vigorosas'
-                ],
-                'presentaciones' => ['Sacos de 25kg', 'Sacos de 40kg'],
-                'edad_recomendada' => 'Aves en reproducción'
-            ]
+                'categoria' => 'Especies Menores',
+                'beneficios' => ['Rico en vitamina C', 'Crecimiento rápido', 'Pelaje brillante'],
+                'presentacion' => 'Sacos de 15kg y 25kg'
+            ],
+            [
+                'titulo' => 'Concentrado Porcino "CerdoMax"',
+                'descripcion' => 'Alimento balanceado para cerdos en todas las etapas. Con lisina, metionina y probióticos para un desarrollo muscular óptimo, mejor conversión alimenticia y carne magra de calidad.',
+                'imagen' => null,
+                'categoria' => 'Porcinos',
+                'beneficios' => ['Desarrollo muscular', 'Carne magra', 'Conversión eficiente'],
+                'presentacion' => 'Sacos de 25kg y 40kg'
+            ],
         ];
 
-        // Categorías para filtrado
-        $categorias = [
-            'Aves',
-            'Aves Acuáticas',
-            'Bovinos',
-            'Porcinos',
-            'Especies Menores',
-            'Aves Especializadas',
-            'Suplementos',
-            'Reproducción'
-        ];
+        $categorias = ['Aves', 'Bovinos', 'Porcinos', 'Especies Menores', 'Energético', 'Suplementos'];
 
         return view('productos', compact('productos', 'categorias'));
     }
