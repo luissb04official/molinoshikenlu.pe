@@ -17,23 +17,23 @@
                         <p class="lead fs-3 mb-4 text-white" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.3);">
                             Más de una década nutriendo el futuro agropecuario
                         </p>
-                        <div class="hero-badges d-flex justify-content-center flex-wrap gap-3 mt-4">
+                        <div class="hero-badges d-flex justify-content-center flex-wrap gap-3 mt-5">
                             <div class="hero-badge">
-                                <div class="badge-content bg-white bg-opacity-20 backdrop-blur px-4 py-2 rounded-pill">
-                                    <i class="fas fa-calendar-alt text-white me-2"></i>
-                                    <span class="text-white fw-semibold">Desde 2010</span>
+                                <div class="badge-content-enhanced px-5 py-4 rounded-pill shadow-lg">
+                                    <i class="fas fa-calendar-alt me-3 fs-4" style="color: #8b9949;"></i>
+                                    <span class="fw-bold fs-5" style="color: #1a202c; text-shadow: none;">Desde 2010</span>
                                 </div>
                             </div>
                             <div class="hero-badge">
-                                <div class="badge-content bg-white bg-opacity-20 backdrop-blur px-4 py-2 rounded-pill">
-                                    <i class="fas fa-certificate text-white me-2"></i>
-                                    <span class="text-white fw-semibold">RUC: 20614323206</span>
+                                <div class="badge-content-enhanced px-5 py-4 rounded-pill shadow-lg">
+                                    <i class="fas fa-certificate me-3 fs-4" style="color: #d67958;"></i>
+                                    <span class="fw-bold fs-5" style="color: #1a202c; text-shadow: none;">RUC: 20614323206</span>
                                 </div>
                             </div>
                             <div class="hero-badge">
-                                <div class="badge-content bg-white bg-opacity-20 backdrop-blur px-4 py-2 rounded-pill">
-                                    <i class="fas fa-map-marker-alt text-white me-2"></i>
-                                    <span class="text-white fw-semibold">Huaral, Lima</span>
+                                <div class="badge-content-enhanced px-5 py-4 rounded-pill shadow-lg">
+                                    <i class="fas fa-map-marker-alt me-3 fs-4" style="color: #8b9949;"></i>
+                                    <span class="fw-bold fs-5" style="color: #1a202c; text-shadow: none;">Huaral, Lima</span>
                                 </div>
                             </div>
                         </div>
@@ -304,14 +304,14 @@
                             </div>
                         </div>
                         
-                        <div class="contact-actions mt-4">
+                        <div class="contact-actions mt-4 d-flex flex-column gap-3 align-items-center">
                             <a href="https://wa.me/51940031589?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20Molinos%20Hikenlu" 
-                               target="_blank" class="btn btn-light btn-sm me-2 mb-2">
-                                <i class="fab fa-whatsapp me-1" style="color: #25D366;"></i>
+                               target="_blank" class="btn btn-whatsapp px-5 py-3 rounded-pill fw-semibold" style="min-width: 200px;">
+                                <i class="fab fa-whatsapp me-2 fs-5"></i>
                                 WhatsApp
                             </a>
-                            <a href="{{ route('contacto') }}" class="btn btn-outline-light btn-sm mb-2">
-                                <i class="fas fa-envelope me-1"></i>
+                            <a href="{{ route('contacto') }}" class="btn btn-formulario px-5 py-3 rounded-pill fw-semibold" style="min-width: 200px;">
+                                <i class="fas fa-envelope me-2"></i>
                                 Formulario
                             </a>
                         </div>
@@ -380,7 +380,7 @@
                 <div class="cta-card p-4 rounded-4 shadow-sm text-center" style="background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%); border: 2px solid rgba(139, 153, 73, 0.2);">
                     <h6 class="mb-3" style="color: #8b9949;">¿Necesitas más información?</h6>
                     <p class="small mb-3" style="color: #5a5a5a;">Contáctanos para conocer más sobre nuestros productos y servicios</p>
-                    <a href="{{ route('productos') }}" class="btn btn-sm px-4" style="background: linear-gradient(45deg, #8b9949, #a4b85c); color: white;">
+                    <a href="{{ route('productos') }}" class="btn btn-cta-productos px-4 py-2 rounded-pill fw-semibold">
                         <i class="fas fa-shopping-cart me-2"></i>
                         Ver Productos
                     </a>
@@ -451,10 +451,51 @@
         text-shadow: 1px 1px 4px rgba(0,0,0,0.3) !important;
     }
     
-    /* Badges en hero */
-    .badge-content {
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255,255,255,0.2);
+    /* Badges en hero - Más visibles */
+    .badge-content-enhanced {
+        backdrop-filter: blur(20px);
+        border: 3px solid rgba(139, 153, 73, 0.6);
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        background: rgba(255, 255, 255, 0.95) !important;
+    }
+    
+    .hero-badge:hover .badge-content-enhanced {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        border-color: rgba(214, 121, 88, 0.5);
+    }
+    
+    /* Botones de acción mejorados */
+    .btn-whatsapp {
+        background: linear-gradient(135deg, #25D366 0%, #20b358 100%);
+        color: white;
+        border: none;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        transition: all 0.3s ease;
+    }
+    
+    .btn-whatsapp:hover {
+        background: linear-gradient(135deg, #20b358 0%, #1a9a4a 100%);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    }
+    
+    .btn-formulario {
+        background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,249,250,0.9) 100%);
+        color: #2d3748;
+        border: 2px solid rgba(255,255,255,0.3);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .btn-formulario:hover {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        color: #8b9949;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        border-color: rgba(139, 153, 73, 0.4);
     }
     
     /* Timeline - Modo Claro */
@@ -725,11 +766,47 @@
         color: #b0b0b0 !important;
     }
     
+    /* Badges en modo oscuro */
+    [data-theme="dark"] .badge-content-enhanced {
+        background: rgba(30, 30, 30, 0.95) !important;
+        border-color: rgba(164, 184, 92, 0.8) !important;
+    }
+    
+    [data-theme="dark"] .badge-content-enhanced span {
+        color: #f0f0f0 !important;
+        font-weight: 700 !important;
+    }
+    
+    [data-theme="dark"] .hero-badge:hover .badge-content-enhanced {
+        border-color: rgba(164, 184, 92, 0.6) !important;
+        background: rgba(42, 42, 42, 0.95) !important;
+    }
+    
+    /* Botones en modo oscuro */
+    [data-theme="dark"] .btn-formulario {
+        background: linear-gradient(135deg, rgba(42, 42, 42, 0.9) 0%, rgba(30, 30, 30, 0.9) 100%);
+        color: #e0e0e0;
+        border-color: rgba(164, 184, 92, 0.3);
+    }
+    
+    [data-theme="dark"] .btn-formulario:hover {
+        background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+        color: #a4b85c;
+        border-color: rgba(164, 184, 92, 0.5);
+    }
+    
     /* Responsive */
     @media (max-width: 768px) {
         .hero-badges {
             flex-direction: column;
-            gap: 1rem !important;
+            gap: 1.5rem !important;
+            align-items: center;
+        }
+        
+        .badge-content-enhanced {
+            min-width: 280px;
+            text-align: center;
+            padding: 1rem 2rem !important;
         }
         
         .section-title {
@@ -739,6 +816,14 @@
         .sidebar-sticky {
             position: relative;
             top: auto;
+        }
+        
+        .contact-actions {
+            width: 100%;
+        }
+        
+        .btn-whatsapp, .btn-formulario {
+            min-width: 280px !important;
         }
     }
 </style>
