@@ -451,19 +451,18 @@
         text-shadow: 1px 1px 4px rgba(0,0,0,0.3) !important;
     }
     
-    /* Badges en hero - Más visibles */
+    /* Badges en hero - Diseño sólido */
     .badge-content-enhanced {
-        backdrop-filter: blur(20px);
-        border: 3px solid rgba(139, 153, 73, 0.6);
-        transition: all 0.3s ease;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        backdrop-filter: blur(8px);
+        border: 2px solid rgba(139, 153, 73, 0.4);
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         background: rgba(255, 255, 255, 0.95) !important;
     }
     
     .hero-badge:hover .badge-content-enhanced {
-        transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-        border-color: rgba(214, 121, 88, 0.5);
+        border-color: rgba(139, 153, 73, 0.7);
+        background: rgba(255, 255, 255, 0.98) !important;
     }
     
     /* Botones de acción mejorados */
@@ -471,31 +470,29 @@
         background: linear-gradient(135deg, #25D366 0%, #20b358 100%);
         color: white;
         border: none;
-        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-        transition: all 0.3s ease;
+        box-shadow: 0 1px 4px rgba(37, 211, 102, 0.2);
+        transition: all 0.2s ease;
     }
     
     .btn-whatsapp:hover {
         background: linear-gradient(135deg, #20b358 0%, #1a9a4a 100%);
         color: white;
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        opacity: 0.95;
     }
     
     .btn-formulario {
         background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,249,250,0.9) 100%);
         color: #2d3748;
         border: 2px solid rgba(255,255,255,0.3);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        transition: all 0.3s ease;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        transition: all 0.2s ease;
     }
     
     .btn-formulario:hover {
         background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
         color: #8b9949;
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        border-color: rgba(139, 153, 73, 0.4);
+        border-color: rgba(139, 153, 73, 0.6);
+        opacity: 0.95;
     }
     
     /* Timeline - Modo Claro */
@@ -778,8 +775,8 @@
     }
     
     [data-theme="dark"] .hero-badge:hover .badge-content-enhanced {
-        border-color: rgba(164, 184, 92, 0.6) !important;
-        background: rgba(42, 42, 42, 0.95) !important;
+        border-color: rgba(164, 184, 92, 0.9) !important;
+        background: rgba(25, 25, 25, 0.98) !important;
     }
     
     /* Botones en modo oscuro */
