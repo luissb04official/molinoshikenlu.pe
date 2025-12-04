@@ -238,20 +238,277 @@
     }
 </style>
 
+<!-- Sección de Estadísticas -->
+<section class="stats-section py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 mb-5">
+                <h2 class="display-5 fw-bold mb-3" style="color: #645d4d;">Nuestra Experiencia en Números</h2>
+                <p class="lead text-muted">Más de una década de compromiso con la excelencia en nutrición animal</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card p-4 rounded-3 text-center h-100">
+                    <div class="stat-icon mb-3">
+                        <i class="fas fa-calendar-alt fa-3x" style="color: #8b9949;"></i>
+                    </div>
+                    <h3 class="stat-number mb-2">14+</h3>
+                    <p class="stat-label mb-0">Años de Experiencia</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card p-4 rounded-3 text-center h-100">
+                    <div class="stat-icon mb-3">
+                        <i class="fas fa-users fa-3x" style="color: #d67958;"></i>
+                    </div>
+                    <h3 class="stat-number mb-2">500+</h3>
+                    <p class="stat-label mb-0">Clientes Satisfechos</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card p-4 rounded-3 text-center h-100">
+                    <div class="stat-icon mb-3">
+                        <i class="fas fa-box fa-3x" style="color: #8b9949;"></i>
+                    </div>
+                    <h3 class="stat-number mb-2">15+</h3>
+                    <p class="stat-label mb-0">Líneas de Productos</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card p-4 rounded-3 text-center h-100">
+                    <div class="stat-icon mb-3">
+                        <i class="fas fa-medal fa-3x" style="color: #d67958;"></i>
+                    </div>
+                    <h3 class="stat-number mb-2">100%</h3>
+                    <p class="stat-label mb-0">Calidad Garantizada</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Sobre Nosotros -->
+<section class="about-preview py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <h2 class="display-6 fw-bold mb-4" style="color: #645d4d;">
+                        Molinos Hikenlu EIRL
+                        <span class="d-block fs-4 text-muted mt-2">Nutrición que impulsa tu producción</span>
+                    </h2>
+                    <p class="lead mb-4">
+                        Desde 2010, somos líderes en la producción de alimentos balanceados para animales de granja 
+                        en la región de Lima. Nuestra planta ubicada en Huaral cuenta con la más moderna tecnología 
+                        para garantizar productos de la más alta calidad.
+                    </p>
+                    <div class="company-highlights mb-4">
+                        <div class="highlight-item d-flex align-items-center mb-3">
+                            <div class="highlight-icon me-3">
+                                <i class="fas fa-industry" style="color: #8b9949; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Instalaciones Modernas</h6>
+                                <small class="text-muted">Equipos de última generación en Av. Estación S/N</small>
+                            </div>
+                        </div>
+                        <div class="highlight-item d-flex align-items-center mb-3">
+                            <div class="highlight-icon me-3">
+                                <i class="fas fa-certificate" style="color: #d67958; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Certificación SENASA</h6>
+                                <small class="text-muted">Registro sanitario vigente - RUC: 20614323206</small>
+                            </div>
+                        </div>
+                        <div class="highlight-item d-flex align-items-center">
+                            <div class="highlight-icon me-3">
+                                <i class="fas fa-leaf" style="color: #8b9949; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Producción Sostenible</h6>
+                                <small class="text-muted">Procesos responsables con el medio ambiente</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="{{ route('nosotros') }}" class="btn btn-lg me-3 mb-2" style="background-color: #8b9949; color: white;">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Conoce Más
+                        </a>
+                        <a href="{{ route('productos') }}" class="btn btn-outline-secondary btn-lg mb-2">
+                            <i class="fas fa-shopping-cart me-2"></i>
+                            Ver Productos
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-visual position-relative">
+                    <div class="image-grid">
+                        <div class="main-image mb-3">
+                            <img src="{{ asset('img/Molinoshikenlu.png') }}" 
+                                 alt="Molinos Hikenlu - Planta de producción" 
+                                 class="img-fluid rounded-3 shadow-lg" 
+                                 style="width: 100%; height: 300px; object-fit: cover;">
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="small-image">
+                                    <img src="{{ asset('img/Produccion.jpg') }}" 
+                                         alt="Producción de alimentos balanceados" 
+                                         class="img-fluid rounded-2" 
+                                         style="width: 100%; height: 140px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="experience-badge p-3 rounded-3 text-center h-100 d-flex flex-column justify-content-center" 
+                                     style="background: linear-gradient(135deg, #8b9949 0%, #a4b85c 100%); color: white;">
+                                    <div class="badge-content">
+                                        <h4 class="mb-1 fw-bold">14+</h4>
+                                        <small>Años de Experiencia</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="cta-section py-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10 text-center">
                 <h2 class="mb-4" style="color: #645d4d;">¿Necesitas asesoría sobre alimentación animal?</h2>
                 <p class="lead mb-4">Nuestros expertos están listos para ayudarte a elegir la mejor nutrición para tus animales.</p>
-                <a href="{{ route('contacto') }}" class="btn btn-lg px-5" style="background-color: #d67958; color: white;">
-                    Contáctanos
-                    <i class="fas fa-arrow-right ms-2"></i>
-                </a>
+                <div class="cta-buttons">
+                    <a href="{{ route('contacto') }}" class="btn btn-lg px-5 me-3 mb-2" style="background-color: #d67958; color: white;">
+                        <i class="fas fa-phone me-2"></i>
+                        Contáctanos
+                    </a>
+                    <a href="https://wa.me/51940031589?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20productos%20de%20nutrición%20animal" 
+                       target="_blank" class="btn btn-success btn-lg px-5 mb-2">
+                        <i class="fab fa-whatsapp me-2"></i>
+                        WhatsApp
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+    /* Sección de estadísticas */
+    .stats-section {
+        background: linear-gradient(135deg, rgba(139, 153, 73, 0.05) 0%, rgba(214, 121, 88, 0.05) 100%);
+    }
+
+    .stat-card {
+        background: white;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(139, 153, 73, 0.1);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .stat-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        border-color: rgba(139, 153, 73, 0.3);
+    }
+
+    .stat-number {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #645d4d;
+        margin: 0;
+    }
+
+    .stat-label {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #6c757d;
+    }
+
+    /* Sección sobre nosotros */
+    .about-preview {
+        transition: background-color 0.3s ease;
+    }
+
+    .highlight-item {
+        transition: all 0.3s ease;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .highlight-item:hover {
+        background: rgba(139, 153, 73, 0.1);
+        transform: translateX(10px);
+    }
+
+    .image-grid .main-image img {
+        transition: all 0.3s ease;
+    }
+
+    .image-grid .main-image img:hover {
+        transform: scale(1.02);
+    }
+
+    .experience-badge {
+        box-shadow: 0 8px 25px rgba(139, 153, 73, 0.3);
+    }
+
+    /* Modo oscuro */
+    [data-theme="dark"] .stats-section {
+        background: linear-gradient(135deg, rgba(42, 42, 42, 0.8) 0%, rgba(30, 30, 30, 0.8) 100%);
+    }
+
+    [data-theme="dark"] .stat-card {
+        background: #2a2a2a;
+        border-color: rgba(164, 184, 92, 0.3);
+        color: #e0e0e0;
+    }
+
+    [data-theme="dark"] .stat-card:hover {
+        background: #333333;
+        border-color: rgba(164, 184, 92, 0.5);
+    }
+
+    [data-theme="dark"] .stat-number {
+        color: #e0e0e0;
+    }
+
+    [data-theme="dark"] .stat-label {
+        color: #b0b0b0;
+    }
+
+    [data-theme="dark"] .about-preview {
+        background-color: #1a1a1a !important;
+    }
+
+    [data-theme="dark"] .highlight-item:hover {
+        background: rgba(164, 184, 92, 0.2);
+    }
+
+    [data-theme="dark"] .about-content h2 {
+        color: #e0e0e0 !important;
+    }
+
+    [data-theme="dark"] .about-content p.lead {
+        color: #c0c0c0;
+    }
+
+    [data-theme="dark"] .highlight-item h6 {
+        color: #e0e0e0;
+    }
+
+    [data-theme="dark"] .highlight-item small {
+        color: #b0b0b0 !important;
+    }
+</style>
 
 
 @endsection
