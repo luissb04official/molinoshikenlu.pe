@@ -18,21 +18,21 @@
                         
                         <div class="hero-badges d-flex justify-content-center flex-wrap gap-3 mt-5">
                             <div class="hero-badge">
-                                <div class="badge-content-enhanced px-5 py-4 rounded-pill shadow-lg">
-                                    <i class="fas fa-calendar-alt me-3 fs-4" style="color: #8b9949;"></i>
-                                    <span class="fw-bold fs-5" style="color: #1a202c; text-shadow: none;">Desde 2010</span>
+                                <div class="badge-content-enhanced px-4 py-3 rounded-pill shadow-lg">
+                                    <i class="fas fa-calendar-alt me-2 fs-5" style="color: #8b9949;"></i>
+                                    <span class="fw-semibold fs-6" style="color: #1a202c; text-shadow: none;">Desde 2010</span>
                                 </div>
                             </div>
                             <div class="hero-badge">
-                                <div class="badge-content-enhanced px-5 py-4 rounded-pill shadow-lg">
-                                    <i class="fas fa-certificate me-3 fs-4" style="color: #d67958;"></i>
-                                    <span class="fw-bold fs-5" style="color: #1a202c; text-shadow: none;">RUC: 20614323206</span>
+                                <div class="badge-content-enhanced px-4 py-3 rounded-pill shadow-lg">
+                                    <i class="fas fa-certificate me-2 fs-5" style="color: #d67958;"></i>
+                                    <span class="fw-semibold fs-6" style="color: #1a202c; text-shadow: none;">RUC: 20614323206</span>
                                 </div>
                             </div>
                             <div class="hero-badge">
-                                <div class="badge-content-enhanced px-5 py-4 rounded-pill shadow-lg">
-                                    <i class="fas fa-map-marker-alt me-3 fs-4" style="color: #8b9949;"></i>
-                                    <span class="fw-bold fs-5" style="color: #1a202c; text-shadow: none;">Huaral, Lima</span>
+                                <div class="badge-content-enhanced px-4 py-3 rounded-pill shadow-lg">
+                                    <i class="fas fa-map-marker-alt me-2 fs-5" style="color: #8b9949;"></i>
+                                    <span class="fw-semibold fs-6" style="color: #1a202c; text-shadow: none;">Huaral, Lima</span>
                                 </div>
                             </div>
                         </div>
@@ -560,9 +560,9 @@
         }
         
         .badge-content-enhanced {
-            min-width: 280px;
+            min-width: 240px;
             text-align: center;
-            padding: 1rem 2rem !important;
+            padding: 0.75rem 1.5rem !important;
         }
         
         .section-title {
@@ -579,7 +579,7 @@
         }
         
         .btn-whatsapp, .btn-formulario {
-            min-width: 280px !important;
+            min-width: 240px !important;
         }
     }
 </style>
